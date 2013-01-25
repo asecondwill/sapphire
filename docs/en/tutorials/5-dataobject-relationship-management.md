@@ -114,7 +114,7 @@ But what about creating `Student` records?
 
 Since students are related to a single project, we will
 allow editing them right the on the CMS interface in the `Project` page type.
-We do this through a powerful field called \`[GridField](reference/grid-field)\`.
+We do this through a powerful field called \`[GridField](/reference/grid-field)\`.
 All customization to fields for a page type are managed through a method called
 `getCMSFields()`, so let's add it there:
 
@@ -152,7 +152,7 @@ Its empty by default, but you can add new students as required,
 or relate them to the project by typing in the box above the table.
 
 In our case, want to manage those records, edit their details, and add new ones. 
-To accomplish this, we have added a specific `[api:GridFieldConfig]`.
+To accomplish this, we have added a specific \`[api:GridFieldConfig]\`.
 While we could've built the config from scratch, there's several
 preconfigured instances. The `GridFieldConfig_RecordEditor` default configures
 the field to edit records, rather than just viewing them.
@@ -164,7 +164,7 @@ We call `setDisplayFields()` directly on the component responsible for their ren
 	Adding a `GridField` to a page type is a popular way to manage data,
 	but not the only one. If your data requires a dedicated interface
 	with more sophisticated search and management logic, consider
-	using the `[ModelAdmin](reference/modeladmin)` interface instead.
+	using the \`[ModelAdmin](/reference/modeladmin)\` interface instead.
 </div>
 
 ![tutorial:tutorial5_project_creation.jpg](_images/tutorial5_project_creation.jpg)
